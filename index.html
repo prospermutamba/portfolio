@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Primary -->
+  <title>Ghost Design Lab — Creative Design Studio | Logo, Brand & UI/UX</title>
+  <meta name="description" content="Ghost Design Lab by Prosper Mutamba Joseph. Premium logo design, brand identity, UI/UX, social media design and video editing. Available for freelance projects worldwide." />
+  <meta name="keywords" content="Ghost Design Lab, Prosper Mutamba, logo design, brand identity, UI/UX designer, graphic designer, freelance designer" />
+  <meta name="author" content="Prosper Mutamba Joseph — Ghost Design Lab" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ghostdesignlab.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghostdesignlab.com/" />
+  <meta property="og:title" content="Ghost Design Lab — Creative Design Studio" />
+  <meta property="og:description" content="Premium logo design, brand identity, UI/UX design and video editing by Prosper Mutamba Joseph." />
+  <meta property="og:image" content="assets/images/profile/og-image.jpg" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+</head>
+
+<body data-lang="en">
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- CURSOR CUSTOM -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LOADER -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-logo">GDL</span>
+      <div class="loader-bar"><div class="loader-progress" id="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- NAVIGATION -->
+  <!-- ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Ghost Design Lab">
+        <span class="nav-logo-text">Ghost Design Lab</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"    class="nav-link" data-key="nav_about">About</a></li>
+        <li><a href="#services" class="nav-link" data-key="nav_services">Services</a></li>
+        <li><a href="#portfolio" class="nav-link" data-key="nav_portfolio">Portfolio</a></li>
+        <li><a href="#skills"   class="nav-link" data-key="nav_skills">Skills</a></li>
+        <li><a href="#contact"  class="nav-link" data-key="nav_contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switcher" id="lang-switcher" role="group" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+        </div>
+
+        <a href="#contact" class="btn-nav" data-key="nav_hire">Hire Me</a>
+
+        <!-- Burger -->
+        <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href="#about"     class="mobile-link" data-key="nav_about">About</a></li>
+      <li><a href="#services"  class="mobile-link" data-key="nav_services">Services</a></li>
+      <li><a href="#portfolio" class="mobile-link" data-key="nav_portfolio">Portfolio</a></li>
+      <li><a href="#skills"    class="mobile-link" data-key="nav_skills">Skills</a></li>
+      <li><a href="#contact"   class="mobile-link" data-key="nav_contact">Contact</a></li>
+    </ul>
+    <div class="mobile-lang">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <span>|</span>
+      <button class="lang-btn" data-lang="fr">FR</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- HERO SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow reveal-up">
+          <span class="eyebrow-dot"></span>
+          <span data-key="hero_eyebrow">Creative Design Studio</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="hero-title-line reveal-up delay-1">Ghost</span>
+          <span class="hero-title-line reveal-up delay-2 hero-title-accent">Design</span>
+          <span class="hero-title-line reveal-up delay-3">Lab.</span>
+        </h1>
+
+        <p class="hero-sub reveal-up delay-4" data-key="hero_sub">
+          Crafting identities that command attention.<br>
+          Designing futures that leave a mark.
+        </p>
+
+        <div class="hero-actions reveal-up delay-5">
+          <a href="#portfolio" class="btn-primary" data-key="hero_cta_projects">View Projects</a>
+          <a href="#contact"   class="btn-ghost"   data-key="hero_cta_contact">Get in Touch</a>
+        </div>
+
+        <div class="hero-stats reveal-up delay-6">
+          <div class="stat">
+            <span class="stat-number" data-count="50">0</span><span class="stat-plus">+</span>
+            <span class="stat-label" data-key="stat_projects">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-count="30">0</span><span class="stat-plus">+</span>
+            <span class="stat-label" data-key="stat_clients">Clients</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+            <span class="stat-label" data-key="stat_years">Years</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-right delay-2">
+        <div class="hero-image-frame">
+          <img src="assets/images/profile/hero-photo.jpg"
+               alt="Prosper Mutamba Joseph — Ghost Design Lab Founder"
+               class="hero-photo" loading="eager" />
+          <div class="hero-image-overlay"></div>
+          <div class="hero-badge">
+            <svg viewBox="0 0 100 100" class="badge-circle">
+              <path id="badge-text-path" d="M50,10 a40,40 0 1,1 -0.1,0"/>
+              <text>
+                <textPath href="#badge-text-path" class="badge-text">
+                  GHOST DESIGN LAB · AVAILABLE FOR WORK ·
+                </textPath>
+              </text>
+            </svg>
+            <span class="badge-dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span data-key="scroll_hint">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- MARQUEE TICKER -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="marquee-wrapper" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Logo Design</span><span class="marquee-dot">·</span>
+      <span>Brand Identity</span><span class="marquee-dot">·</span>
+      <span>UI/UX Design</span><span class="marquee-dot">·</span>
+      <span>Social Media</span><span class="marquee-dot">·</span>
+      <span>Print Design</span><span class="marquee-dot">·</span>
+      <span>Video Editing</span><span class="marquee-dot">·</span>
+      <span>Logo Design</span><span class="marquee-dot">·</span>
+      <span>Brand Identity</span><span class="marquee-dot">·</span>
+      <span>UI/UX Design</span><span class="marquee-dot">·</span>
+      <span>Social Media</span><span class="marquee-dot">·</span>
+      <span>Print Design</span><span class="marquee-dot">·</span>
+      <span>Video Editing</span><span class="marquee-dot">·</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- ABOUT SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="section-label reveal-up" data-key="about_label">About Me</div>
+          <h2 class="section-title reveal-up delay-1" data-key="about_title">
+            Turning ideas into<br>
+            <em>visual stories</em>
+          </h2>
+          <div class="about-image-block reveal-up delay-2">
+            <img src="assets/images/profile/about-photo.jpg"
+                 alt="Prosper Mutamba Joseph at work"
+                 loading="lazy" />
+            <div class="about-image-caption">
+              <span>Prosper Mutamba Joseph</span>
+              <span class="caption-role" data-key="about_role">Founder & Creative Director</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <p class="about-lead reveal-up" data-key="about_lead">
+            I'm Prosper Mutamba Joseph, founder of Ghost Design Lab — a creative studio built on the belief that great design is never an accident.
+          </p>
+          <p class="about-body reveal-up delay-1" data-key="about_body">
+            With a deep passion for visual communication, I specialize in building brands that resonate, interfaces that convert, and content that captivates. Every project I take on starts with a single question: what story does this brand need to tell?
+          </p>
+          <p class="about-body reveal-up delay-2" data-key="about_body2">
+            Based in the DRC and working globally, I bring together strategic thinking and aesthetic precision to deliver design solutions that don't just look good — they work.
+          </p>
+
+          <div class="about-values reveal-up delay-3">
+            <div class="value-item">
+              <div class="value-icon">◈</div>
+              <div>
+                <strong data-key="value1_title">Precision</strong>
+                <p data-key="value1_body">Every pixel placed with intention.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">◈</div>
+              <div>
+                <strong data-key="value2_title">Strategy</strong>
+                <p data-key="value2_body">Design that serves business goals.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">◈</div>
+              <div>
+                <strong data-key="value3_title">Impact</strong>
+                <p data-key="value3_body">Results you can measure.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="cv-prosper-mutamba.pdf" class="btn-outline reveal-up delay-4" download data-key="about_cv">
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SERVICES SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="services section section-dark" id="services">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-label reveal-up" data-key="services_label">What I Do</div>
+        <h2 class="section-title reveal-up delay-1" data-key="services_title">
+          Services built for<br><em>ambitious brands</em>
+        </h2>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal-up delay-1">
+          <div class="service-number">01</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8L8 16v16l16 8 16-8V16L24 8z" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="24" cy="24" r="4" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 data-key="svc1_title">Logo Design</h3>
+          <p data-key="svc1_body">Distinctive marks that become the face of your brand. From wordmarks to emblems — built to last.</p>
+          <div class="service-tags">
+            <span>Wordmark</span><span>Emblem</span><span>Monogram</span>
+          </div>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card reveal-up delay-2">
+          <div class="service-number">02</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="14" height="14" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="26" y="8" width="14" height="14" fill="currentColor" fill-opacity=".3" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="8" y="26" width="14" height="14" fill="currentColor" fill-opacity=".15" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="26" y="26" width="14" height="14" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 data-key="svc2_title">Brand Identity</h3>
+          <p data-key="svc2_body">Complete brand systems — color, typography, voice and visual language that unify every touchpoint.</p>
+          <div class="service-tags">
+            <span>Guidelines</span><span>System</span><span>Strategy</span>
+          </div>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card reveal-up delay-3">
+          <div class="service-number">03</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="8" width="28" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M18 32h12M24 28v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="24" cy="18" r="4" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 data-key="svc3_title">Social Media Design</h3>
+          <p data-key="svc3_body">Scroll-stopping visuals for every platform. Consistent, on-brand and designed to grow your audience.</p>
+          <div class="service-tags">
+            <span>Instagram</span><span>LinkedIn</span><span>Facebook</span>
+          </div>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card reveal-up delay-1">
+          <div class="service-number">04</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 10h32v28H8z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 16h20M14 22h14M14 28h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 data-key="svc4_title">Print Design</h3>
+          <p data-key="svc4_body">Brochures, flyers, business cards, posters — print materials designed with purpose and print-ready precision.</p>
+          <div class="service-tags">
+            <span>Brochure</span><span>Poster</span><span>Card</span>
+          </div>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card reveal-up delay-2">
+          <div class="service-number">05</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 18h8M14 24h6M28 18h6M28 24h4M14 30h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 data-key="svc5_title">UI/UX Design</h3>
+          <p data-key="svc5_body">Interfaces that are beautiful and frictionless. From wireframe to polished prototype — user first, always.</p>
+          <div class="service-tags">
+            <span>Figma</span><span>Prototyping</span><span>UX Research</span>
+          </div>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card reveal-up delay-3">
+          <div class="service-number">06</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 8h32v32H8z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M20 18l12 6-12 6V18z" fill="currentColor" fill-opacity=".4" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 data-key="svc6_title">Video Editing</h3>
+          <p data-key="svc6_body">Brand films, reels, motion graphics — video content that communicates your story with cinematic impact.</p>
+          <div class="service-tags">
+            <span>Reels</span><span>Motion</span><span>Brand Film</span>
+          </div>
+          <div class="service-arrow">→</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- PORTFOLIO SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal-up" data-key="portfolio_label">Selected Work</div>
+        <h2 class="section-title reveal-up delay-1" data-key="portfolio_title">
+          Projects that<br><em>speak louder</em>
+        </h2>
+      </div>
+
+      <!-- Filter -->
+      <div class="portfolio-filter reveal-up delay-2" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all" data-key="filter_all">All</button>
+        <button class="filter-btn" data-filter="logo"    data-key="filter_logo">Logo</button>
+        <button class="filter-btn" data-filter="brand"   data-key="filter_brand">Brand</button>
+        <button class="filter-btn" data-filter="ui"      data-key="filter_ui">UI/UX</button>
+        <button class="filter-btn" data-filter="social"  data-key="filter_social">Social</button>
+        <button class="filter-btn" data-filter="print"   data-key="filter_print">Print</button>
+        <button class="filter-btn" data-filter="video"   data-key="filter_video">Video</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="portfolio-grid" id="portfolio-grid">
+
+        <!-- PROJECT 1 -->
+        <article class="portfolio-item" data-category="logo brand" data-index="0">
+          <button class="portfolio-card" aria-label="Open project: Volta Energy — Brand Identity">
+            <div class="portfolio-img-wrap">
+              <img src="assets/images/portfolio/project-01.jpg"
+                   alt="Volta Energy Brand Identity" loading="lazy" />
+              <div class="portfolio-overlay">
+                <span class="overlay-cta" data-key="portfolio_view">View Project</span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-cat" data-key="cat_logo_brand">Logo · Brand Identity</span>
+              <h3 class="portfolio-name">Volta Energy</h3>
+            </div>
+          </button>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="portfolio-item featured" data-category="brand ui" data-index="1">
+          <button class="portfolio-card" aria-label="Open project: Noir Collective — UI/UX Design">
+            <div class="portfolio-img-wrap">
+              <img src="assets/images/portfolio/project-02.jpg"
+                   alt="Noir Collective UI/UX Design" loading="lazy" />
+              <div class="portfolio-overlay">
+                <span class="overlay-cta" data-key="portfolio_view">View Project</span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-cat" data-key="cat_brand_ui">Brand · UI/UX</span>
+              <h3 class="portfolio-name">Noir Collective</h3>
+            </div>
+          </button>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="portfolio-item" data-category="social" data-index="2">
+          <button class="portfolio-card" aria-label="Open project: Bloom Studio — Social Media">
+            <div class="portfolio-img-wrap">
+              <img src="assets/images/portfolio/project-03.jpg"
+                   alt="Bloom Studio Social Media Design" loading="lazy" />
+              <div class="portfolio-overlay">
+                <span class="overlay-cta" data-key="portfolio_view">View Project</span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-cat" data-key="cat_social">Social Media</span>
+              <h3 class="portfolio-name">Bloom Studio</h3>
+            </div>
+          </button>
+        </article>
+
+        <!-- PROJECT 4 -->
+        <article class="portfolio-item" data-category="logo" data-index="3">
+          <button class="portfolio-card" aria-label="Open project: Apex Sports — Logo Design">
+            <div class="portfolio-img-wrap">
+              <img src="assets/images/portfolio/project-04.jpg"
+                   alt="Apex Sports Logo Design" loading="lazy" />
+              <div class="portfolio-overlay">
+                <span class="overlay-cta" data-key="portfolio_view">View Project</span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-cat" data-key="cat_logo">Logo Design</span>
+              <h3 class="portfolio-name">Apex Sports</h3>
+            </div>
+          </button>
+        </article>
+
+        <!-- PROJECT 5 -->
+        <article class="portfolio-item" data-category="print" data-index="4">
+          <button class="portfolio-card" aria-label="Open project: Maison Noir — Print Design">
+            <div class="portfolio-img-wrap">
+              <img src="assets/images/portfolio/project-05.jpg"
+                   alt="Maison Noir Print Design" loading="lazy" />
+              <div class="portfolio-overlay">
+                <span class="overlay-cta" data-key="portfolio_view">View Project</span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-cat" data-key="cat_print">Print Design</span>
+              <h3 class="portfolio-name">Maison Noir</h3>
+            </div>
+          </button>
+        </article>
+
+        <!-- PROJECT 6 -->
+        <article class="portfolio-item" data-category="video" data-index="5">
+          <button class="portfolio-card" aria-label="Open project: Kinetic Reels — Video Editing">
+            <div class="portfolio-img-wrap">
+              <img src="assets/images/portfolio/project-06.jpg"
+                   alt="Kinetic Reels Video Editing" loading="lazy" />
+              <div class="portfolio-overlay">
+                <span class="overlay-cta" data-key="portfolio_view">View Project</span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-cat" data-key="cat_video">Video Editing</span>
+              <h3 class="portfolio-name">Kinetic Reels</h3>
+            </div>
+          </button>
+        </article>
+
+      </div><!-- /portfolio-grid -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- PROJECT MODAL -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-label="Project details" hidden>
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close project">
+        <span>✕</span>
+      </button>
+      <div class="modal-body" id="modal-body">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- CASE STUDY SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="casestudy section section-dark" id="casestudy">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-label reveal-up" data-key="case_label">Case Study</div>
+        <h2 class="section-title reveal-up delay-1" data-key="case_title">
+          Behind the<br><em>work</em>
+        </h2>
+      </div>
+
+      <div class="case-grid">
+        <div class="case-step reveal-up delay-1">
+          <div class="case-step-number">01</div>
+          <h3 data-key="case_step1_title">The Challenge</h3>
+          <p data-key="case_step1_body">A growing energy startup needed a visual identity that would position them as a premium, trustworthy player in a crowded market. Their existing brand was inconsistent and failed to communicate innovation.</p>
+        </div>
+        <div class="case-connector" aria-hidden="true"></div>
+        <div class="case-step reveal-up delay-2">
+          <div class="case-step-number">02</div>
+          <h3 data-key="case_step2_title">The Solution</h3>
+          <p data-key="case_step2_body">I developed a complete brand system from scratch — starting with a strategic brief, moving through logo explorations, and culminating in a full visual identity with guidelines for digital and print.</p>
+        </div>
+        <div class="case-connector" aria-hidden="true"></div>
+        <div class="case-step reveal-up delay-3">
+          <div class="case-step-number">03</div>
+          <h3 data-key="case_step3_title">The Result</h3>
+          <p data-key="case_step3_body">The new brand increased investor confidence, landed a Series A round, and drove a 40% increase in social media engagement within the first quarter of launch.</p>
+        </div>
+      </div>
+
+      <div class="case-result-bar reveal-up delay-4">
+        <div class="result-metric">
+          <span class="result-number">+40%</span>
+          <span class="result-label" data-key="result1">Engagement</span>
+        </div>
+        <div class="result-metric">
+          <span class="result-number">Series A</span>
+          <span class="result-label" data-key="result2">Funding Secured</span>
+        </div>
+        <div class="result-metric">
+          <span class="result-number">3 Weeks</span>
+          <span class="result-label" data-key="result3">Delivery</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SKILLS SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal-up" data-key="skills_label">Toolkit</div>
+        <h2 class="section-title reveal-up delay-1" data-key="skills_title">
+          Tools & <em>expertise</em>
+        </h2>
+      </div>
+
+      <div class="skills-layout">
+        <div class="skills-tools reveal-up delay-1">
+          <h3 class="skills-sub" data-key="skills_software">Software</h3>
+          <div class="tools-grid">
+            <div class="tool-item">
+              <div class="tool-icon-wrap">
+                <img src="assets/icons/ps.svg" alt="Adobe Photoshop" loading="lazy" />
+              </div>
+              <span>Photoshop</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon-wrap">
+                <img src="assets/icons/ai.svg" alt="Adobe Illustrator" loading="lazy" />
+              </div>
+              <span>Illustrator</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon-wrap">
+                <img src="assets/icons/pr.svg" alt="Adobe Premiere Pro" loading="lazy" />
+              </div>
+              <span>Premiere Pro</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon-wrap">
+                <img src="assets/icons/figma.svg" alt="Figma" loading="lazy" />
+              </div>
+              <span>Figma</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon-wrap">
+                <img src="assets/icons/office.svg" alt="Microsoft Office" loading="lazy" />
+              </div>
+              <span>MS Office</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-bars reveal-up delay-2">
+          <h3 class="skills-sub" data-key="skills_expertise">Expertise Level</h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span data-key="skill_logo">Logo Design</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="95"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span data-key="skill_brand">Brand Identity</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span data-key="skill_uiux">UI/UX Design</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span data-key="skill_social">Social Media</span>
+                <span>92%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="92"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span data-key="skill_video">Video Editing</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- TESTIMONIALS SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="testimonials section section-dark" id="testimonials">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-label reveal-up" data-key="testi_label">Testimonials</div>
+        <h2 class="section-title reveal-up delay-1" data-key="testi_title">
+          What clients<br><em>say</em>
+        </h2>
+      </div>
+
+      <div class="testi-slider" id="testi-slider">
+        <!-- TESTIMONIAL 1 -->
+        <div class="testi-slide active">
+          <div class="testi-quote">"</div>
+          <p class="testi-text" data-key="testi1_text">
+            Prosper completely transformed our brand. The new identity is clean, memorable, and has already attracted partnerships we couldn't have imagined before. His attention to detail is unmatched.
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar">
+              <img src="assets/images/profile/client-01.jpg" alt="Client 1" loading="lazy" />
+            </div>
+            <div>
+              <strong class="testi-name" data-key="testi1_name">Alexandra Dumas</strong>
+              <span class="testi-role" data-key="testi1_role">CEO, Volta Energy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TESTIMONIAL 2 -->
+        <div class="testi-slide">
+          <div class="testi-quote">"</div>
+          <p class="testi-text" data-key="testi2_text">
+            Working with Ghost Design Lab was an exceptional experience. Prosper understood our vision immediately and delivered a social media design system that boosted our engagement by 40%.
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar">
+              <img src="assets/images/profile/client-02.jpg" alt="Client 2" loading="lazy" />
+            </div>
+            <div>
+              <strong class="testi-name" data-key="testi2_name">Marcus Webb</strong>
+              <span class="testi-role" data-key="testi2_role">Marketing Director, Noir Collective</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TESTIMONIAL 3 -->
+        <div class="testi-slide">
+          <div class="testi-quote">"</div>
+          <p class="testi-text" data-key="testi3_text">
+            The UI/UX redesign Prosper delivered for our app exceeded all our expectations. User retention improved significantly and the app now converts at a much higher rate.
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar">
+              <img src="assets/images/profile/client-03.jpg" alt="Client 3" loading="lazy" />
+            </div>
+            <div>
+              <strong class="testi-name" data-key="testi3_name">Sophia Laurent</strong>
+              <span class="testi-role" data-key="testi3_role">Product Manager, Bloom Studio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-controls">
+        <button class="testi-prev" id="testi-prev" aria-label="Previous testimonial">←</button>
+        <div class="testi-dots" id="testi-dots">
+          <button class="testi-dot active" data-index="0"></button>
+          <button class="testi-dot" data-index="1"></button>
+          <button class="testi-dot" data-index="2"></button>
+        </div>
+        <button class="testi-next" id="testi-next" aria-label="Next testimonial">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- CONTACT SECTION -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <div class="section-label reveal-up" data-key="contact_label">Let's Talk</div>
+          <h2 class="section-title reveal-up delay-1" data-key="contact_title">
+            Ready to build<br><em>something great?</em>
+          </h2>
+          <p class="contact-lead reveal-up delay-2" data-key="contact_lead">
+            Whether you need a logo, a full brand system, or a UI overhaul — I'm available for freelance projects worldwide. Let's create something remarkable together.
+          </p>
+
+          <div class="contact-info reveal-up delay-3">
+            <a href="mailto:ghostdesignlab46@gmail.com" class="contact-info-item">
+              <div class="contact-info-icon">✉</div>
+              <div>
+                <span class="contact-info-label" data-key="contact_email_label">Email</span>
+                <span class="contact-info-value">ghostdesignlab46@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/ghost-design-lab-394501415" target="_blank" rel="noopener noreferrer" class="contact-info-item">
+              <div class="contact-info-icon">in</div>
+              <div>
+                <span class="contact-info-label" data-key="contact_linkedin_label">LinkedIn</span>
+                <span class="contact-info-value">Ghost Design Lab</span>
+              </div>
+            </a>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">◎</div>
+              <div>
+                <span class="contact-info-label" data-key="contact_location_label">Location</span>
+                <span class="contact-info-value" data-key="contact_location_value">DRC — Available Worldwide</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right reveal-up delay-2">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name" data-key="form_name">Full Name</label>
+                <input type="text" id="contact-name" name="name"
+                       placeholder="John Doe" autocomplete="name" required />
+                <span class="form-error" id="error-name"></span>
+              </div>
+              <div class="form-group">
+                <label for="contact-email" data-key="form_email">Email Address</label>
+                <input type="email" id="contact-email" name="email"
+                       placeholder="john@example.com" autocomplete="email" required />
+                <span class="form-error" id="error-email"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-service" data-key="form_service">Service Needed</label>
+              <select id="contact-service" name="service">
+                <option value="" data-key="form_service_placeholder">Select a service…</option>
+                <option value="logo"    data-key="svc1_title">Logo Design</option>
+                <option value="brand"   data-key="svc2_title">Brand Identity</option>
+                <option value="social"  data-key="svc3_title">Social Media Design</option>
+                <option value="print"   data-key="svc4_title">Print Design</option>
+                <option value="ui"      data-key="svc5_title">UI/UX Design</option>
+                <option value="video"   data-key="svc6_title">Video Editing</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message" data-key="form_message">Message</label>
+              <textarea id="contact-message" name="message" rows="5"
+                        placeholder="Tell me about your project…" required></textarea>
+              <span class="form-error" id="error-message"></span>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="form-submit">
+              <span data-key="form_submit">Send Message</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <p class="form-success" id="form-success" hidden data-key="form_success">
+              Message sent! I'll reply within 24 hours.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- FOOTER -->
+  <!-- ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">Ghost Design Lab</span>
+          <p class="footer-tagline" data-key="footer_tagline">
+            Design that commands attention.
+          </p>
+        </div>
+        <div class="footer-links-col">
+          <h4 data-key="footer_nav">Navigation</h4>
+          <ul>
+            <li><a href="#about"     data-key="nav_about">About</a></li>
+            <li><a href="#services"  data-key="nav_services">Services</a></li>
+            <li><a href="#portfolio" data-key="nav_portfolio">Portfolio</a></li>
+            <li><a href="#contact"   data-key="nav_contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 data-key="footer_services">Services</h4>
+          <ul>
+            <li><a href="#services" data-key="svc1_title">Logo Design</a></li>
+            <li><a href="#services" data-key="svc2_title">Brand Identity</a></li>
+            <li><a href="#services" data-key="svc5_title">UI/UX Design</a></li>
+            <li><a href="#services" data-key="svc6_title">Video Editing</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 data-key="footer_connect">Connect</h4>
+          <ul>
+            <li><a href="mailto:ghostdesignlab46@gmail.com">Email</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/ghost-design-lab-394501415"
+                 target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © <span id="footer-year"></span> Ghost Design Lab.
+          <span data-key="footer_rights">All rights reserved.</span>
+        </p>
+        <p class="footer-credit" data-key="footer_made">
+          Made with precision by Prosper Mutamba Joseph.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SCRIPTS -->
+  <!-- ═══════════════════════════════════════ -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
