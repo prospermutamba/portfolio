@@ -52,7 +52,7 @@
   --space-32: 8rem;
 
   /* Layout */
-  --max-w:     1280px;
+  --max-w:     1280px; 
   --section-py: var(--space-32);
   --radius:     4px;
   --radius-lg:  12px;
